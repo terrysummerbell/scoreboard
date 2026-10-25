@@ -1,6 +1,9 @@
 body {
     margin: 0;
-    background-color: #1B244A;
+    background-image: url("images/anaheim-ducks.webp");
+    background-size: cover;       /* Scales image to cover entire area */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
@@ -8,23 +11,33 @@ body {
     font-weight: bold;
 }
 
+main {
+    background-color: #060606;
+    width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 4px white solid;
+    border-radius: 10px;
+}
+
 h2 {
     font-size: 40px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .scoreboard {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin: 0;
 }
 
-#scoreboard-home, #scoreboard-away {
+#scoreboard-ducks, #scoreboard-rival {
    margin: 0 40px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 24px;
+   gap: 16px;
 }
 
 .score-text, .score-button, #reset-scores {
@@ -34,7 +47,6 @@ h2 {
 .score-text {
     background-color: #080001;
     font-size: 90px;
-    color: #F94F6D;
     width: 155px;
     height: 120px;
     border-radius: 5px;
@@ -42,18 +54,34 @@ h2 {
     margin: 0;
 }
 
+#score-ducks {
+    color: #E24D21;
+}
+
+#score-rival {
+    color: #919191;
+}
+
 .score-button, #reset-scores {
-    background-color: #1B244A;
+    background-color: white;
     color: #9AABD8;
     border: 1px #9AABD8 solid;
     border-radius: 5px;
     padding: 12px;
     margin: 0 5px;
-    font-size: 18px;
+}
+
+.score-button {
+    font-size: 24px;
+    padding: 10 20px;
 }
 
 #reset-scores {
     margin-top: 50px;
-    background-color: white;
-    color: #F94F6D;
+    font-family: inherit;
+    background-color: #222222;
+    color: white;
+    border: 1px white solid;
+    font-size: 18px;
+    padding: 5px 10px;
 }

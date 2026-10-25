@@ -1,17 +1,17 @@
-let scoreHome = 0
-let scoreAway = 0
+let scoreDucks = 0
+let scoreRival = 0
 
-let scoreHomeNumber = document.getElementById("score-home")
-let scoreAwayNumber = document.getElementById("score-away") 
+let scoreDucksNumber = document.getElementById("score-ducks")
+let scoreRivalNumber = document.getElementById("score-rival") 
 
 // --- Add score functions - Home ---
-function addOneHome() {
-    scoreHome += 1
-    scoreHomeNumber.textContent = scoreHome
+function addOneDucks() {
+    scoreDucks += 1
+    scoreDucksNumber.textContent = scoreDucks
     // console.log(scoreHome)
 }
 
-function addTwoHome() {
+/* function addTwoHome() {
     scoreHome += 2
     scoreHomeNumber.textContent = scoreHome
     // console.log(scoreHome)
@@ -22,15 +22,16 @@ function addThreeHome() {
     scoreHomeNumber.textContent = scoreHome
     // console.log(scoreHome)
 }
+*/
 
 // --- Add score functions - Away ---
-function addOneAway() {
-    scoreAway += 1
-    scoreAwayNumber.textContent = scoreAway
+function addOneRival() {
+    scoreRival += 1
+    scoreRivalNumber.textContent = scoreRival
     // console.log(scoreAway)
 }
 
-function addTwoAway() {
+/* function addTwoAway() {
     scoreAway += 2
     scoreAwayNumber.textContent = scoreAway
     // console.log(scoreAway)
@@ -41,14 +42,14 @@ function addThreeAway() {
     scoreAwayNumber.textContent = scoreAway
     // console.log(scoreAway)
 }
-
+*/
 
 // --- Reset scores ---
 function resetScores() {
-    scoreHome = 0
-    scoreHomeNumber.textContent = 0
-    scoreAway = 0
-    scoreAwayNumber.textContent = 0
+    scoreDucks = 0
+    scoreDucksNumber.textContent = 0
+    scoreRival = 0
+    scoreRivalNumber.textContent = 0
 }
 
 

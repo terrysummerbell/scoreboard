@@ -8,29 +8,27 @@
     </head>
     <body>
         <main>
-            <h1>Sports Scorecard</h1>
-            
             <section class="scoreboard">
-                <div id="scoreboard-home">
-                    <h2>Home</h2>
-                    <p class="score-text" id="score-home">0</p>
+                <div id="scoreboard-ducks">
+                    <h2>Ducks</h2>
+                    <p class="score-text" id="score-ducks">0</p>
                     <div class="score-buttons">
-                        <button class="score-button" id="add-1-home" onclick="addOneHome()">+1</button>
-                        <button class="score-button" id="add-2-home" onclick="addTwoHome()">+2</button>
-                        <button class="score-button" id="add-3-home" onclick="addThreeHome()">+3</button>
+                        <button class="score-button" id="score-ducks" onclick="addOneDucks()">Score</button>
+                        <!-- <button class="score-button" id="add-2-home" onclick="addTwoHome()">+2</button> -->
+                        <!-- <button class="score-button" id="add-3-home" onclick="addThreeHome()">+3</button> -->
                     </div>
                 </div>
-                <div id="scoreboard-away">
-                    <h2>Away</h2>
-                    <p class="score-text" id="score-away">0</p>
+                <div id="scoreboard-rival">
+                    <h2>Rival</h2>
+                    <p class="score-text" id="score-rival">0</p>
                     <div class="score-buttons">
-                        <button class="score-button" id="add-1-away" onclick="addOneAway()">+1</button>
-                        <button class="score-button" id="add-2-away" onclick="addTwoAway()">+2</button>
-                        <button class="score-button" id="add-3-away" onclick="addThreeAway()">+3</button>
+                        <button class="score-button" id="score-rival" onclick="addOneRival()">Score</button>
+                        <!-- <button class="score-button" id="add-2-away" onclick="addTwoAway()">+2</button> -->
+                        <!-- <button class="score-button" id="add-3-away" onclick="addThreeAway()">+3</button> -->
                     </div>
                 </div>
             </section>
-            <button id="reset-scores" onclick="resetScores()">Reset Scores</button>
+            <button id="reset-scores" onclick="resetScores()">Reset</button>
         </main>
         <script src="index.js"></script>
     </body>
