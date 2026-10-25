@@ -1,16 +1,37 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+         <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+         <style>
+            @import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+         </style>       
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-            </div>
-            <div>
-                <h3>AWAY</h3>
-            </div>
-        </div>
+        <main>
+            <h1>Sports Scorecard</h1>
+            
+            <section class="scoreboard">
+                <div id="scoreboard-home">
+                    <h2>Home</h2>
+                    <p class="score-text" id="score-home">0</p>
+                    <div class="score-buttons">
+                        <button class="score-button" id="add-1-home" onclick="addOneHome()">+1</button>
+                        <button class="score-button" id="add-2-home" onclick="addTwoHome()">+2</button>
+                        <button class="score-button" id="add-3-home" onclick="addThreeHome()">+3</button>
+                    </div>
+                </div>
+                <div id="scoreboard-away">
+                    <h2>Away</h2>
+                    <p class="score-text" id="score-away">0</p>
+                    <div class="score-buttons">
+                        <button class="score-button" id="add-1-away" onclick="addOneAway()">+1</button>
+                        <button class="score-button" id="add-2-away" onclick="addTwoAway()">+2</button>
+                        <button class="score-button" id="add-3-away" onclick="addThreeAway()">+3</button>
+                    </div>
+                </div>
+            </section>
+            <button id="reset-scores" onclick="resetScores()">Reset Scores</button>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
